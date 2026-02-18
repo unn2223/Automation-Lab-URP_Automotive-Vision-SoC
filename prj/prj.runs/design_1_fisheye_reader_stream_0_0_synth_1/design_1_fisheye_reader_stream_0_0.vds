@@ -1,0 +1,319 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 28 16:53:11 2025
+# Process ID: 3627
+# Current directory: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_fisheye_reader_stream_0_0_synth_1
+# Command line: vivado -log design_1_fisheye_reader_stream_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fisheye_reader_stream_0_0.tcl
+# Log file: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_fisheye_reader_stream_0_0_synth_1/design_1_fisheye_reader_stream_0_0.vds
+# Journal file: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_fisheye_reader_stream_0_0_synth_1/vivado.jou
+# Running On: DESKTOP-1CQ16CU, OS: Linux, CPU Frequency: 3686.399 MHz, CPU Physical cores: 8, Host memory: 20973 MB
+#-----------------------------------------------------------
+source design_1_fisheye_reader_stream_0_0.tcl -notrace
+INFO: Dispatch client connection id - 40991
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2022.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_fisheye_reader_stream_0_0 -part xczu3eg-sbva484-1-i -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3754
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/opt/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3040.793 ; gain = 130.828 ; free physical = 7680 ; free virtual = 17461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_fisheye_reader_stream_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_fisheye_reader_stream_0_0/synth/design_1_fisheye_reader_stream_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'fisheye_reader_stream' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fisheye_lut_ip_distrom' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_lut_ip_distorm.v:8]
+INFO: [Synth 8-3876] $readmem data file 'map_x.mem' is read successfully [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_lut_ip_distorm.v:31]
+INFO: [Synth 8-3876] $readmem data file 'map_y.mem' is read successfully [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_lut_ip_distorm.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'fisheye_lut_ip_distrom' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_lut_ip_distorm.v:8]
+WARNING: [Synth 8-7071] port 'delaythree_run_en' of module 'fisheye_lut_ip_distrom' is unconnected for instance 'u_lut' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:70]
+WARNING: [Synth 8-7023] instance 'u_lut' of module 'fisheye_lut_ip_distrom' has 9 connections declared, but only 8 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'fisheye_reader_stream' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fisheye_reader_stream_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_fisheye_reader_stream_0_0/synth/design_1_fisheye_reader_stream_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element idx_pipe_reg[0] was removed.  [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:129]
+WARNING: [Synth 8-6014] Unused sequential element idx_pipe_reg[1] was removed.  [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:129]
+WARNING: [Synth 8-6014] Unused sequential element frame_run_reg was removed.  [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:152]
+WARNING: [Synth 8-6014] Unused sequential element sof_sent_reg was removed.  [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:155]
+WARNING: [Synth 8-6014] Unused sequential element user_r_reg was removed.  [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/new/fisheye_reader_stream.v:196]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3205.012 ; gain = 295.047 ; free physical = 8148 ; free virtual = 17929
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3207.980 ; gain = 298.016 ; free physical = 8148 ; free virtual = 17929
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3207.980 ; gain = 298.016 ; free physical = 8148 ; free virtual = 17929
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3207.980 ; gain = 0.000 ; free physical = 8105 ; free virtual = 17887
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3291.793 ; gain = 0.000 ; free physical = 8064 ; free virtual = 17845
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3315.605 ; gain = 23.812 ; free physical = 8062 ; free virtual = 17844
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3315.605 ; gain = 405.641 ; free physical = 8820 ; free virtual = 18601
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3315.605 ; gain = 405.641 ; free physical = 8822 ; free virtual = 18603
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 3315.605 ; gain = 405.641 ; free physical = 8817 ; free virtual = 18599
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 3315.605 ; gain = 405.641 ; free physical = 8741 ; free virtual = 18522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 2     
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 4     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_web driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[31] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[30] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[29] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[28] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[27] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[26] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[25] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[24] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[23] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[22] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[21] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[20] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[19] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[18] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[17] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[16] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[15] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[14] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[13] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[12] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[11] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[10] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[9] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[8] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[7] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[6] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[5] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[4] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[3] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[2] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[1] driven by constant 0
+INFO: [Synth 8-3917] design design_1_fisheye_reader_stream_0_0 has port bram_dinb[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:44 . Memory (MB): peak = 3315.605 ; gain = 405.641 ; free physical = 13114 ; free virtual = 22896
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------------+------------+---------------+----------------+
+|Module Name            | RTL Object | Depth x Width | Implemented As | 
++-----------------------+------------+---------------+----------------+
+|fisheye_lut_ip_distrom | map_x      | 131072x10     | LUT            | 
+|fisheye_lut_ip_distrom | map_y      | 131072x9      | LUT            | 
++-----------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 3719.285 ; gain = 809.320 ; free physical = 10460 ; free virtual = 20243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:55 . Memory (MB): peak = 3719.285 ; gain = 809.320 ; free physical = 10508 ; free virtual = 20292
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 3755.324 ; gain = 845.359 ; free physical = 9077 ; free virtual = 18860
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:01:00 . Memory (MB): peak = 3761.262 ; gain = 851.297 ; free physical = 10023 ; free virtual = 19807
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:01:00 . Memory (MB): peak = 3761.262 ; gain = 851.297 ; free physical = 10023 ; free virtual = 19807
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 3761.262 ; gain = 851.297 ; free physical = 9962 ; free virtual = 19746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 3761.262 ; gain = 851.297 ; free physical = 9956 ; free virtual = 19739
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 3761.262 ; gain = 851.297 ; free physical = 9938 ; free virtual = 19721
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 3761.262 ; gain = 851.297 ; free physical = 9933 ; free virtual = 19717
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                        | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|design_1_fisheye_reader_stream_0_0 | inst/three_delay_run_en_reg      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_fisheye_reader_stream_0_0 | inst/three_delay_out_valid_r_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_fisheye_reader_stream_0_0 | inst/three_delay_tlast_reg       | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|design_1_fisheye_reader_stream_0_0 | inst/three_delay_an_tuser_reg    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-----------------------------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     6|
+|2     |LUT1   |     2|
+|3     |LUT2   |   107|
+|4     |LUT3   |   352|
+|5     |LUT4   |   663|
+|6     |LUT5   |  2453|
+|7     |LUT6   | 12740|
+|8     |MUXF7  |  4833|
+|9     |MUXF8  |   532|
+|10    |SRL16E |     4|
+|11    |FDCE   |    97|
+|12    |FDRE   |     4|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 3761.262 ; gain = 851.297 ; free physical = 9930 ; free virtual = 19714
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 3761.262 ; gain = 743.672 ; free physical = 9973 ; free virtual = 19756
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:01 . Memory (MB): peak = 3761.270 ; gain = 851.297 ; free physical = 10067 ; free virtual = 19851
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3772.230 ; gain = 0.000 ; free physical = 10001 ; free virtual = 19785
+INFO: [Netlist 29-17] Analyzing 5371 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_fisheye_reader_stream_0_0' is not ideal for floorplanning, since the cellview 'fisheye_lut_ip_distrom' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3778.168 ; gain = 0.000 ; free physical = 10046 ; free virtual = 19830
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 4033a6f3
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:10 . Memory (MB): peak = 3778.168 ; gain = 868.203 ; free physical = 10314 ; free virtual = 20097
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_fisheye_reader_stream_0_0_synth_1/design_1_fisheye_reader_stream_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3818.188 ; gain = 40.020 ; free physical = 9465 ; free virtual = 19249
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fisheye_reader_stream_0_0, cache-ID = 7fdf3174149297be
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_fisheye_reader_stream_0_0_synth_1/design_1_fisheye_reader_stream_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3818.188 ; gain = 0.000 ; free physical = 10170 ; free virtual = 19954
+INFO: [runtcl-4] Executing : report_utilization -file design_1_fisheye_reader_stream_0_0_utilization_synth.rpt -pb design_1_fisheye_reader_stream_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 28 16:55:07 2025...

@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: design_1_xbar_3
+Log file: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_xbar_3_synth_1/runme.log

@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 28 17:04:09 2025
+# Process ID: 6991
+# Current directory: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_auto_pc_0_synth_1
+# Command line: vivado -log design_1_auto_pc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_auto_pc_0.tcl
+# Log file: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_auto_pc_0_synth_1/design_1_auto_pc_0.vds
+# Journal file: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/design_1_auto_pc_0_synth_1/vivado.jou
+# Running On: DESKTOP-1CQ16CU, OS: Linux, CPU Frequency: 3686.399 MHz, CPU Physical cores: 8, Host memory: 20973 MB
+#-----------------------------------------------------------
+source design_1_auto_pc_0.tcl -notrace
+INFO: Dispatch client connection id - 40991
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2022.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 0b2e6c36fdfa0d36.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 28 17:04:22 2025...

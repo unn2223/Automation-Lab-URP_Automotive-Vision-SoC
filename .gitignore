@@ -1,0 +1,24 @@
+# Snapshot repo mode:
+# Keep generated outputs so others can open the same project view.
+
+# Runtime cache only
+**/.Xil/
+
+# Volatile logs (optional, regenerate anytime)
+**/*.log
+**/*.jou
+**/*.pb
+**/*.str
+**/*.wdf
+**/*.wpc
+**/runme.*
+**/ISEWrap.*
+**/rundef.js
+**/gen_run.xml
+
+# Recreated local project (from recreate script)
+project/
+
+# Python cache
+**/__pycache__/
+**/*.pyc

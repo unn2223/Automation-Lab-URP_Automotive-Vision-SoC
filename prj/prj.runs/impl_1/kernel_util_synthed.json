@@ -1,0 +1,42 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "design_state": "Synthesized",
+    "user_budget": {
+        "actual_resources": {
+            "LUT": "38097",
+            "LUTAsMem": "4009",
+            "REG": "59312",
+            "BRAM": "126",
+            "DSP": "326"
+        },
+        "supply_resources": {
+            "LUT": "38202",
+            "LUTAsMem": "27796",
+            "REG": "119930",
+            "BRAM": "137",
+            "DSP": "360"
+        }
+    },
+    "kernels": [
+        {
+            "name": "DPUCZDX8G",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "DPUCZDX8G_1",
+                    "actual_resources": {
+                        "LUT": "38097",
+                        "LUTAsMem": "4009",
+                        "REG": "59312",
+                        "BRAM": "126",
+                        "DSP": "326"
+                    }
+                }
+            ]
+        }
+    ]
+}

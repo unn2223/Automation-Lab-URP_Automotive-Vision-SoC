@@ -1,0 +1,820 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Nov 28 17:09:23 2025
+# Process ID: 7273
+# Current directory: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/design_1_wrapper.vds
+# Journal file: /mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/vivado.jou
+# Running On: DESKTOP-1CQ16CU, OS: Linux, CPU Frequency: 3686.399 MHz, CPU Physical cores: 8, Host memory: 20973 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 40991
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/int/xo/ip_repo/xilinx_com_RTLKernel_DPUCZDX8G_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/.local/hw_platform/iprepo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/Vitis/2022.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2022.1/data/ip'.
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:57 . Memory (MB): peak = 3258.102 ; gain = 344.168 ; free physical = 15946 ; free virtual = 25761
+Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-i -incremental_mode off
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7340
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/opt/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14695 ; free virtual = 24510
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/imports/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_DPUCZDX8G_1_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_DPUCZDX8G_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_DPUCZDX8G_1_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_DPUCZDX8G_1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_aruser' of module 'design_1_DPUCZDX8G_1_0' is unconnected for instance 'DPUCZDX8G_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:669]
+WARNING: [Synth 8-7071] port 'M_AXI_GP0_awuser' of module 'design_1_DPUCZDX8G_1_0' is unconnected for instance 'DPUCZDX8G_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:669]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'design_1_DPUCZDX8G_1_0' is unconnected for instance 'DPUCZDX8G_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:669]
+WARNING: [Synth 8-7023] instance 'DPUCZDX8G_1' of module 'design_1_DPUCZDX8G_1_0' has 127 connections declared, but only 124 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:669]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_IP_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_IP_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_IP_1_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_IP_1_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_IP_2_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_2_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_IP_2_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_2_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_IP_3_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_3_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_IP_3_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_3_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_IP_4_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_4_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_IP_4_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_4_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PWM_IP_5_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_5_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PWM_IP_5_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_PWM_IP_5_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_ic_ps_e_S_AXI_HP0_FPD_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:2139]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_6L1F6C' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11510]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_6L1F6C' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11510]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_ic_ps_e_S_AXI_HP0_FPD_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:2139]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_ic_ps_e_S_AXI_HP1_FPD_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:2519]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1URSQ6B' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11252]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1URSQ6B' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11252]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_ic_ps_e_S_AXI_HP1_FPD_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:2519]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_intc_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_intc_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_intc_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_intc_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_hpc0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:2899]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_FOHWEU' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:6724]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_ds_0' is unconnected for instance 'auto_ds' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7027]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_ds_0' is unconnected for instance 'auto_ds' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7027]
+WARNING: [Synth 8-7023] instance 'auto_ds' of module 'design_1_auto_ds_0' has 76 connections declared, but only 74 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7027]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_FOHWEU' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:6724]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1HR7X1W' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11148]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1HR7X1W' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11148]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_D0T8MT' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12054]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_D0T8MT' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12054]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1IHX9XZ' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12179]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_cc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_cc_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_auto_cc_0' is unconnected for instance 'auto_cc' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12497]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_auto_cc_0' is unconnected for instance 'auto_cc' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12497]
+WARNING: [Synth 8-7023] instance 'auto_cc' of module 'design_1_auto_cc_0' has 74 connections declared, but only 72 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12497]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_us_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_us_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1IHX9XZ' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12179]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_xbar_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_3' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_xbar_3_stub.v:5]
+WARNING: [Synth 8-7071] port 's_axi_bid' of module 'design_1_xbar_3' is unconnected for instance 'xbar' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:3648]
+WARNING: [Synth 8-7071] port 's_axi_rid' of module 'design_1_xbar_3' is unconnected for instance 'xbar' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:3648]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'design_1_xbar_3' has 78 connections declared, but only 76 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:3648]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_hpc0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:2899]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_register_slice_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_register_slice_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_register_slice_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_register_slice_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awid' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awaddr' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awlen' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awsize' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awlock' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awcache' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awqos' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awuser' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_awvalid' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_wdata' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_wstrb' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_wlast' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_wvalid' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_bready' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arid' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_araddr' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arlen' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arsize' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arlock' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arcache' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arqos' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_aruser' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_arvalid' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7071] port 'm_axi_rready' of module 'design_1_axi_register_slice_0_0' is unconnected for instance 'axi_register_slice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+WARNING: [Synth 8-7023] instance 'axi_register_slice_0' of module 'design_1_axi_register_slice_0_0' has 84 connections declared, but only 54 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1214]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_vdma_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_vdma_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'design_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1269]
+WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'design_1_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1269]
+WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'design_1_axi_vdma_0_0' has 42 connections declared, but only 40 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1269]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_vdma_1_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_vdma_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_vdma_1_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axi_vdma_1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'design_1_axi_vdma_1_0' is unconnected for instance 'axi_vdma_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1310]
+WARNING: [Synth 8-7023] instance 'axi_vdma_1' of module 'design_1_axi_vdma_1_0' has 45 connections declared, but only 44 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1310]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_resize_half_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axis_resize_half_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_resize_half_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_axis_resize_half_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_bram_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_bram_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_bram_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_bram_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_bram_con_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_bram_con_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_bram_con_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_bram_con_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'last_hs' of module 'design_1_bram_con_0_0' is unconnected for instance 'bram_con_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1385]
+WARNING: [Synth 8-7071] port 'wcount' of module 'design_1_bram_con_0_0' is unconnected for instance 'bram_con_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1385]
+WARNING: [Synth 8-7023] instance 'bram_con_0' of module 'design_1_bram_con_0_0' has 18 connections declared, but only 16 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1385]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fifo_generator_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_fifo_generator_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fifo_generator_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_fifo_generator_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_fisheye_reader_stream_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_fisheye_reader_stream_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_fisheye_reader_stream_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_fisheye_reader_stream_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'three_delay_issue' of module 'design_1_fisheye_reader_stream_0_0' is unconnected for instance 'fisheye_reader_stream_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1426]
+WARNING: [Synth 8-7071] port 'pix_cnt_acc' of module 'design_1_fisheye_reader_stream_0_0' is unconnected for instance 'fisheye_reader_stream_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1426]
+WARNING: [Synth 8-7071] port 'm_tkeep' of module 'design_1_fisheye_reader_stream_0_0' is unconnected for instance 'fisheye_reader_stream_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1426]
+WARNING: [Synth 8-7023] instance 'fisheye_reader_stream_0' of module 'design_1_fisheye_reader_stream_0_0' has 17 connections declared, but only 14 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1426]
+INFO: [Synth 8-6157] synthesizing module 'design_1_interconnect_axifull_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:3727]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_TS14CE' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11768]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_TS14CE' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:11768]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_interconnect_axifull_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:3727]
+WARNING: [Synth 8-7071] port 'S00_AXI_arready' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_awready' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_bid' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_bresp' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_bvalid' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_rdata' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_rid' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_rlast' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_rresp' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_rvalid' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7071] port 'S00_AXI_wready' of module 'design_1_interconnect_axifull_0' is unconnected for instance 'interconnect_axifull' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+WARNING: [Synth 8-7023] instance 'interconnect_axifull' of module 'design_1_interconnect_axifull_0' has 84 connections declared, but only 73 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1441]
+INFO: [Synth 8-6157] synthesizing module 'design_1_interconnect_axihpm0fpd_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:4147]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_LZ5KQ3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7236]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_LZ5KQ3' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7236]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_18I7I6I' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7536]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_18I7I6I' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7536]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_KRWMG8' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:8204]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_2_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_KRWMG8' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:8204]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_19Z40G9' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:8622]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_3' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_3_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_2' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_2' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_19Z40G9' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:8622]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_J1CIZX' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9306]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_4' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_4_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_3' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_J1CIZX' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9306]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1BO40CS' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9724]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_5' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_5' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_5_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_4' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1BO40CS' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9724]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_I43WKU' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:10142]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_6' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_ds_6_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_5' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_5' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_I43WKU' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:10142]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1EICXNT' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:10560]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1EICXNT' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:10560]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_xbar_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_4' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_xbar_4_stub.v:5]
+WARNING: [Synth 8-689] width (16) of port connection 'm_axi_aruser' does not match port width (112) of module 'design_1_xbar_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:5842]
+WARNING: [Synth 8-689] width (16) of port connection 'm_axi_awuser' does not match port width (112) of module 'design_1_xbar_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:5855]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_interconnect_axihpm0fpd_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:4147]
+INFO: [Synth 8-6157] synthesizing module 'design_1_interconnect_axilite_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:5913]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_JCSF6O' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7104]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_JCSF6O' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7104]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1BBTU69' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7954]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1BBTU69' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:7954]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_HS4CIR' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:8079]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_HS4CIR' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:8079]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1CMSXHE' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9040]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_cc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_1' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_cc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_m03_regslice_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_m03_regslice_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_m03_regslice_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_m03_regslice_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'design_1_m03_regslice_0' is unconnected for instance 'm03_regslice' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9265]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'design_1_m03_regslice_0' is unconnected for instance 'm03_regslice' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9265]
+WARNING: [Synth 8-7023] instance 'm03_regslice' of module 'design_1_m03_regslice_0' has 40 connections declared, but only 38 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9265]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1CMSXHE' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:9040]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1GFTYN6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:10846]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_6' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_auto_pc_6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1GFTYN6' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:10846]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_5' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_xbar_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_5' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_xbar_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_interconnect_axilite_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:5913]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1844]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1844]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1844]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1844]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1844]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'design_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1844]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_0' has 10 connections declared, but only 5 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1844]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1850]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_1_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_1_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_1_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1850]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1850]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1850]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1850]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'design_1_proc_sys_reset_1_0' is unconnected for instance 'proc_sys_reset_1' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1850]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_1' of module 'design_1_proc_sys_reset_1_0' has 10 connections declared, but only 5 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1850]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1856]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_2_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_2_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_2_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_2_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1856]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1856]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1856]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1856]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'design_1_proc_sys_reset_2_0' is unconnected for instance 'proc_sys_reset_2' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1856]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_2' of module 'design_1_proc_sys_reset_2_0' has 10 connections declared, but only 5 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1856]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_3_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_3_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_3_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_3_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1862]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1862]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1862]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_3_0' is unconnected for instance 'proc_sys_reset_3' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1862]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_3' of module 'design_1_proc_sys_reset_3_0' has 10 connections declared, but only 6 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1862]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_4_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_4_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_4_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_4_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1869]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1869]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1869]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_4_0' is unconnected for instance 'proc_sys_reset_4' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1869]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_4' of module 'design_1_proc_sys_reset_4_0' has 10 connections declared, but only 6 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1869]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_5_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_5_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_5_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_5_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1876]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1876]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1876]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_5_0' is unconnected for instance 'proc_sys_reset_5' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1876]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_5' of module 'design_1_proc_sys_reset_5_0' has 10 connections declared, but only 6 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1876]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_6_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_6_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_6_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_proc_sys_reset_6_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'design_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'design_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'design_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'design_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'design_1_proc_sys_reset_6_0' is unconnected for instance 'proc_sys_reset_6' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_6' of module 'design_1_proc_sys_reset_6_0' has 10 connections declared, but only 5 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1883]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps_e_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_ps_e_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps_e_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-7273-DESKTOP-1CQ16CU/realtime/design_1_ps_e_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+WARNING: [Synth 8-7071] port 'saxigp0_rid' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+WARNING: [Synth 8-7071] port 'saxigp2_bid' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+WARNING: [Synth 8-7071] port 'saxigp2_rid' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+WARNING: [Synth 8-7071] port 'saxigp3_bid' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+WARNING: [Synth 8-7071] port 'saxigp3_rid' of module 'design_1_ps_e_0' is unconnected for instance 'ps_e' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'ps_e' of module 'design_1_ps_e_0' has 243 connections declared, but only 235 given [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:1895]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_2_0' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_2_0' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/sources_1/imports/sources_1/imports/design_1_wrapper.v:12]
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14825 ; free virtual = 24641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14822 ; free virtual = 24638
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14822 ; free virtual = 24638
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14816 ; free virtual = 24631
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0/design_1_axi_intc_0_0_in_context.xdc] for cell 'design_1_i/axi_intc_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_register_slice_0_0/design_1_axi_register_slice_0_0/design_1_axi_register_slice_0_0_in_context.xdc] for cell 'design_1_i/axi_register_slice_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_register_slice_0_0/design_1_axi_register_slice_0_0/design_1_axi_register_slice_0_0_in_context.xdc] for cell 'design_1_i/axi_register_slice_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'design_1_i/clk_wiz_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0/design_1_proc_sys_reset_0_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_1'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0/design_1_proc_sys_reset_1_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_1'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_2'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0/design_1_proc_sys_reset_2_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_2'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_3_0/design_1_proc_sys_reset_3_0/design_1_proc_sys_reset_3_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_3'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_3_0/design_1_proc_sys_reset_3_0/design_1_proc_sys_reset_3_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_3'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_4_0/design_1_proc_sys_reset_4_0/design_1_proc_sys_reset_4_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_4'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_4_0/design_1_proc_sys_reset_4_0/design_1_proc_sys_reset_4_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_4'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_5_0/design_1_proc_sys_reset_5_0/design_1_proc_sys_reset_5_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_5'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_5_0/design_1_proc_sys_reset_5_0/design_1_proc_sys_reset_5_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_5'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_6_0/design_1_proc_sys_reset_6_0/design_1_proc_sys_reset_6_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_6'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_proc_sys_reset_6_0/design_1_proc_sys_reset_6_0/design_1_proc_sys_reset_6_0_in_context.xdc] for cell 'design_1_i/proc_sys_reset_6'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_ps_e_0/design_1_ps_e_0/design_1_ps_e_0_in_context.xdc] for cell 'design_1_i/ps_e'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_ps_e_0/design_1_ps_e_0/design_1_ps_e_0_in_context.xdc] for cell 'design_1_i/ps_e'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_0_0/design_1_PWM_IP_0_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_0_0/design_1_PWM_IP_0_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_1_0/design_1_PWM_IP_1_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_1'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_1_0/design_1_PWM_IP_1_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_1'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_2_0/design_1_PWM_IP_2_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_2'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_2_0/design_1_PWM_IP_2_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_2'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_3_0/design_1_PWM_IP_3_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_3'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_3_0/design_1_PWM_IP_3_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_3'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_4_0/design_1_PWM_IP_4_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_4'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_4_0/design_1_PWM_IP_4_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_4'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_5_0/design_1_PWM_IP_5_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_5'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_PWM_IP_5_0/design_1_PWM_IP_5_0/design_1_PWM_IP_0_0_in_context.xdc] for cell 'design_1_i/PWM_IP_5'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0/design_1_axi_vdma_0_0_in_context.xdc] for cell 'design_1_i/axi_vdma_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_in_context.xdc] for cell 'design_1_i/axi_vdma_1'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0/design_1_axi_vdma_1_0_in_context.xdc] for cell 'design_1_i/axi_vdma_1'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0_in_context.xdc] for cell 'design_1_i/fifo_generator_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0/design_1_fifo_generator_0_0_in_context.xdc] for cell 'design_1_i/fifo_generator_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_bram_0_0/design_1_bram_0_0/design_1_bram_0_0_in_context.xdc] for cell 'design_1_i/bram_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_bram_0_0/design_1_bram_0_0/design_1_bram_0_0_in_context.xdc] for cell 'design_1_i/bram_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_bram_con_0_0/design_1_bram_con_0_0/design_1_bram_con_0_0_in_context.xdc] for cell 'design_1_i/bram_con_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_bram_con_0_0/design_1_bram_con_0_0/design_1_bram_con_0_0_in_context.xdc] for cell 'design_1_i/bram_con_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axis_resize_half_0_0/design_1_axis_resize_half_0_0/design_1_axis_resize_half_0_0_in_context.xdc] for cell 'design_1_i/axis_resize_half_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_axis_resize_half_0_0/design_1_axis_resize_half_0_0/design_1_axis_resize_half_0_0_in_context.xdc] for cell 'design_1_i/axis_resize_half_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_fisheye_reader_stream_0_0/design_1_fisheye_reader_stream_0_0/design_1_fisheye_reader_stream_0_0_in_context.xdc] for cell 'design_1_i/fisheye_reader_stream_0'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_fisheye_reader_stream_0_0/design_1_fisheye_reader_stream_0_0/design_1_fisheye_reader_stream_0_0_in_context.xdc] for cell 'design_1_i/fisheye_reader_stream_0'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3/design_1_xbar_3_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/xbar'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xbar_3/design_1_xbar_3/design_1_xbar_3_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/xbar'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/s02_couplers/auto_us'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/s02_couplers/auto_us'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/s02_couplers/auto_cc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0/design_1_auto_cc_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/s02_couplers/auto_cc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/m00_couplers/auto_ds'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/axi_interconnect_hpc0/m00_couplers/auto_ds'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xbar_4/design_1_xbar_4/design_1_xbar_4_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/xbar'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xbar_4/design_1_xbar_4/design_1_xbar_4_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/xbar'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m01_couplers/auto_ds'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m01_couplers/auto_ds'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m01_couplers/auto_pc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m01_couplers/auto_pc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m02_couplers/auto_ds'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m02_couplers/auto_ds'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m02_couplers/auto_pc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m02_couplers/auto_pc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m03_couplers/auto_ds'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m03_couplers/auto_ds'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m03_couplers/auto_pc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m03_couplers/auto_pc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_4/design_1_auto_ds_4/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m04_couplers/auto_ds'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_4/design_1_auto_ds_4/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m04_couplers/auto_ds'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m04_couplers/auto_pc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m04_couplers/auto_pc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_5/design_1_auto_ds_5/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m05_couplers/auto_ds'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_5/design_1_auto_ds_5/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m05_couplers/auto_ds'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m05_couplers/auto_pc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m05_couplers/auto_pc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_6/design_1_auto_ds_6/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m06_couplers/auto_ds'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_ds_6/design_1_auto_ds_6/design_1_auto_ds_6_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m06_couplers/auto_ds'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m06_couplers/auto_pc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5/design_1_auto_pc_5_in_context.xdc] for cell 'design_1_i/interconnect_axihpm0fpd/m06_couplers/auto_pc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xbar_5/design_1_xbar_5/design_1_xbar_5_in_context.xdc] for cell 'design_1_i/interconnect_axilite/xbar'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_xbar_5/design_1_xbar_5/design_1_xbar_5_in_context.xdc] for cell 'design_1_i/interconnect_axilite/xbar'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6/design_1_auto_pc_6_in_context.xdc] for cell 'design_1_i/interconnect_axilite/s00_couplers/auto_pc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6/design_1_auto_pc_6_in_context.xdc] for cell 'design_1_i/interconnect_axilite/s00_couplers/auto_pc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_m03_regslice_0/design_1_m03_regslice_0/design_1_m03_regslice_0_in_context.xdc] for cell 'design_1_i/interconnect_axilite/m03_couplers/m03_regslice'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_m03_regslice_0/design_1_m03_regslice_0/design_1_m03_regslice_0_in_context.xdc] for cell 'design_1_i/interconnect_axilite/m03_couplers/m03_regslice'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1/design_1_auto_cc_1_in_context.xdc] for cell 'design_1_i/interconnect_axilite/m03_couplers/auto_cc'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1/design_1_auto_cc_1_in_context.xdc] for cell 'design_1_i/interconnect_axilite/m03_couplers/auto_cc'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_DPUCZDX8G_1_0/design_1_DPUCZDX8G_1_0/design_1_DPUCZDX8G_1_0_in_context.xdc] for cell 'design_1_i/DPUCZDX8G_1'
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.gen/sources_1/bd/design_1/ip/design_1_DPUCZDX8G_1_0/design_1_DPUCZDX8G_1_0/design_1_DPUCZDX8G_1_0_in_context.xdc] for cell 'design_1_i/DPUCZDX8G_1'
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/constrs_1/imports/new/ultra96v2.xdc]
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/constrs_1/imports/new/ultra96v2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.srcs/constrs_1/imports/new/ultra96v2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14721 ; free virtual = 24537
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14721 ; free virtual = 24537
+WARNING: [Timing 38-316] Clock period '13.333' specified during out-of-context synthesis of instance 'design_1_i/axi_intc_0' at clock pin 's_axi_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14802 ; free virtual = 24618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14802 ; free virtual = 24618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_intc_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_register_slice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/proc_sys_reset_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps_e. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_IP_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_IP_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_IP_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_IP_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_IP_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/PWM_IP_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_vdma_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_vdma_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fifo_generator_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/bram_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/bram_con_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axis_resize_half_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fisheye_reader_stream_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_hpc0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_hpc0/s02_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_hpc0/s02_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_hpc0/m00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_interconnect_hpc0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axifull. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m02_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m03_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m03_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m04_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m04_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m05_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m05_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m06_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd/m06_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axihpm0fpd. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axilite/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axilite/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axilite/m03_couplers/m03_regslice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axilite/m03_couplers/auto_cc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/interconnect_axilite. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/DPUCZDX8G_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_ic_ps_e_S_AXI_HP0_FPD. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_ic_ps_e_S_AXI_HP1_FPD. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:23 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14802 ; free virtual = 24618
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:24 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14801 ; free virtual = 24617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 3258.102 ; gain = 0.000 ; free physical = 14791 ; free virtual = 24607
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3647.992 ; gain = 389.891 ; free physical = 14234 ; free virtual = 24050
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:33 . Memory (MB): peak = 3649.992 ; gain = 391.891 ; free physical = 14232 ; free virtual = 24048
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:34 . Memory (MB): peak = 3669.023 ; gain = 410.922 ; free physical = 14225 ; free virtual = 24041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14225 ; free virtual = 24041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14225 ; free virtual = 24041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14225 ; free virtual = 24041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14225 ; free virtual = 24041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14225 ; free virtual = 24041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14224 ; free virtual = 24040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |design_1_xbar_3                    |         1|
+|2     |design_1_auto_ds_0                 |         1|
+|3     |design_1_auto_cc_0                 |         1|
+|4     |design_1_auto_us_0                 |         1|
+|5     |design_1_xbar_4                    |         1|
+|6     |design_1_auto_ds_1                 |         1|
+|7     |design_1_auto_pc_0                 |         1|
+|8     |design_1_auto_ds_2                 |         1|
+|9     |design_1_auto_pc_1                 |         1|
+|10    |design_1_auto_ds_3                 |         1|
+|11    |design_1_auto_pc_2                 |         1|
+|12    |design_1_auto_ds_4                 |         1|
+|13    |design_1_auto_pc_3                 |         1|
+|14    |design_1_auto_ds_5                 |         1|
+|15    |design_1_auto_pc_4                 |         1|
+|16    |design_1_auto_ds_6                 |         1|
+|17    |design_1_auto_pc_5                 |         1|
+|18    |design_1_xbar_5                    |         1|
+|19    |design_1_auto_cc_1                 |         1|
+|20    |design_1_m03_regslice_0            |         1|
+|21    |design_1_auto_pc_6                 |         1|
+|22    |design_1_DPUCZDX8G_1_0             |         1|
+|23    |design_1_PWM_IP_0_0                |         1|
+|24    |design_1_PWM_IP_1_0                |         1|
+|25    |design_1_PWM_IP_2_0                |         1|
+|26    |design_1_PWM_IP_3_0                |         1|
+|27    |design_1_PWM_IP_4_0                |         1|
+|28    |design_1_PWM_IP_5_0                |         1|
+|29    |design_1_axi_intc_0_0              |         1|
+|30    |design_1_axi_register_slice_0_0    |         1|
+|31    |design_1_axi_vdma_0_0              |         1|
+|32    |design_1_axi_vdma_1_0              |         1|
+|33    |design_1_axis_resize_half_0_0      |         1|
+|34    |design_1_bram_0_0                  |         1|
+|35    |design_1_bram_con_0_0              |         1|
+|36    |design_1_clk_wiz_0_0               |         1|
+|37    |design_1_fifo_generator_0_0        |         1|
+|38    |design_1_fisheye_reader_stream_0_0 |         1|
+|39    |design_1_proc_sys_reset_0_0        |         1|
+|40    |design_1_proc_sys_reset_1_0        |         1|
+|41    |design_1_proc_sys_reset_2_0        |         1|
+|42    |design_1_proc_sys_reset_3_0        |         1|
+|43    |design_1_proc_sys_reset_4_0        |         1|
+|44    |design_1_proc_sys_reset_5_0        |         1|
+|45    |design_1_proc_sys_reset_6_0        |         1|
+|46    |design_1_ps_e_0                    |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |design_1_DPUCZDX8G_1             |     1|
+|2     |design_1_PWM_IP_0                |     1|
+|3     |design_1_PWM_IP_1                |     1|
+|4     |design_1_PWM_IP_2                |     1|
+|5     |design_1_PWM_IP_3                |     1|
+|6     |design_1_PWM_IP_4                |     1|
+|7     |design_1_PWM_IP_5                |     1|
+|8     |design_1_auto_cc                 |     2|
+|10    |design_1_auto_ds                 |     7|
+|17    |design_1_auto_pc                 |     7|
+|24    |design_1_auto_us                 |     1|
+|25    |design_1_axi_intc_0              |     1|
+|26    |design_1_axi_register_slice_0    |     1|
+|27    |design_1_axi_vdma_0              |     1|
+|28    |design_1_axi_vdma_1              |     1|
+|29    |design_1_axis_resize_half_0      |     1|
+|30    |design_1_bram_0                  |     1|
+|31    |design_1_bram_con_0              |     1|
+|32    |design_1_clk_wiz_0               |     1|
+|33    |design_1_fifo_generator_0        |     1|
+|34    |design_1_fisheye_reader_stream_0 |     1|
+|35    |design_1_m03_regslice            |     1|
+|36    |design_1_proc_sys_reset_0        |     1|
+|37    |design_1_proc_sys_reset_1        |     1|
+|38    |design_1_proc_sys_reset_2        |     1|
+|39    |design_1_proc_sys_reset_3        |     1|
+|40    |design_1_proc_sys_reset_4        |     1|
+|41    |design_1_proc_sys_reset_5        |     1|
+|42    |design_1_proc_sys_reset_6        |     1|
+|43    |design_1_ps_e                    |     1|
+|44    |design_1_xbar                    |     3|
+|47    |OBUF                             |     6|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14224 ; free virtual = 24040
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 47 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 3674.961 ; gain = 416.859 ; free physical = 14263 ; free virtual = 24079
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:36 . Memory (MB): peak = 3674.969 ; gain = 416.859 ; free physical = 14357 ; free virtual = 24173
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3682.898 ; gain = 0.000 ; free physical = 14355 ; free virtual = 24171
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3720.586 ; gain = 0.000 ; free physical = 14284 ; free virtual = 24100
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 2e104ab6
+INFO: [Common 17-83] Releasing license: Synthesis
+179 Infos, 228 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:01:06 . Memory (MB): peak = 3720.586 ; gain = 462.484 ; free physical = 14485 ; free virtual = 24301
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint '/mnt/c/DPU-PYNQ/boards/Ultra96v2/binary_container_1/link/vivado/vpl/prj/prj.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 28 17:11:40 2025...
