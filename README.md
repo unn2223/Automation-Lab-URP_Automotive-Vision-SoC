@@ -1,4 +1,7 @@
 ﻿# LUT 기반 왜곡 보정 전처리 + DPU 통합 실시간 차선 검출 Vision SoC 프로젝트
+<img width="590" height="266.5" alt="image" src="https://github.com/user-attachments/assets/a00b0519-c65b-43cc-a994-394c93a2be51" />
+<img width="218" height="267.5" alt="image" src="https://github.com/user-attachments/assets/98de170d-aa76-4132-a623-c12c66e83f08" />
+
 
 ## 프로젝트 소개
 Ultra96v2(Zynq UltraScale+ MPSoC) 기반 임베디드 비전 시스템에서,
@@ -28,6 +31,55 @@ fisheye 왜곡 보정 전처리와 DPU 기반 차선 검출 추론을 통합한 
 
 ## 프로젝트 설명
 프로젝트의 구체적인 구현 내용(RTL 상세, 검증 신호 파형 등)은 `2025_2학기_URP_최종 발표.pptx`를 참고해주세요.
+
+## 구현 결과 (Experiment Results)
+
+### 핵심 성과 요약
+- **최종 FPGA 자원 활용**: LUT **92.56%**, BRAM **95.14%**, DSP **90.56%**로 한정된 FPGA 자원 내에서 **전처리 + 추론 파이프라인**을 통합 구현
+- **End-to-End 성능(640×480 RGB)**: 프레임당 **약 30 ms** 처리로 **33.3 FPS** 달성
+- **정상 동작 검증**: 하드웨어 전처리(왜곡 보정/리사이즈) -> DPU 추론 -> 후처리/시각화까지 **실시간 스트리밍 파이프라인**으로 안정 동작 및 주행 성공
+
+
+
+### 1) 최종 자원 사용률 (Final Resource Utilization)
+
+| Resource | Utilization | Available | Utilization % |
+|---|---:|---:|---:|
+| LUT | 65312 | 70560 | 92.56 |
+| LUTRAM | 4581 | 28800 | 15.91 |
+| FF | 74791 | 141120 | 53.00 |
+| BRAM | 205.50 | 216 | 95.14 |
+| DSP | 326 | 360 | 90.56 |
+
+- **LUT 기반 왜곡 보정 테이블 + 프레임 버퍼 + FIFO + DPU**를 단일 PL 영역에 통합하여, 제한된 FPGA 자원 내에서 **전처리 + 추론 파이프라인**을 구현함
+  -> 결과적으로 **자원 제약이 큰 임베디드 FPGA 환경에서 전처리와 추론을 동시에 수용** 가능함을 보였습니다.
+
+
+
+### 2) End-to-End 처리 성능 (FPS)
+
+**입력 조건**: 640 × 480 RGB 기준
+
+| Metric | Without OpenCV | With OpenCV | Proposed System |
+|---|---:|---:|---:|
+| Processing Time (s) | 1.2 | 0.18 | 0.030 |
+| FPS | 0.8 | 5.5 | 33.3 |
+
+**해석**
+- PS 기반 방식은 **왜곡 보정 + 추론을 순차 처리**하여 프레임당 처리 시간이 길고, 실시간 동작이 어렵습니다.
+- OpenCV 가속을 적용해도 **5.5 FPS** 수준으로 제한됩니다.
+- 저희의 시스템은 왜곡 보정 전처리를 **PL에서 수행**하고, 이를 **DPU 추론 파이프라인과 통합**하여 프레임당 **약 30 ms(33.3 FPS)**를 달성했습니다.  
+  -> Vision SoC 파이프라인에서 **PS 병목을 제거**해 전체 처리 효율을 크게 개선했습니다.
+
+
+
+### 3) 차선 검출 추론 결과 (Lane Detection Inference Results)
+
+<img width="381.67" height="170.83" alt="image" src="https://github.com/user-attachments/assets/927741e2-8eba-4efc-aa58-88ff321a768b" />
+
+- 입력 데이터가 **하드웨어 전처리(리사이즈/왜곡 보정)** -> **DPU 추론** -> **후처리 및 시각화**까지 **연속 처리**됨을 확인했습니다.
+- 실시간 스트리밍 조건에서 엔드투엔드로 정상 동작함을 보여줍니다.
+
 
 ## 저장소 구조
 
