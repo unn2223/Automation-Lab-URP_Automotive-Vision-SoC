@@ -8,6 +8,30 @@
 3. 시뮬레이션 결과 HEX를 이미지로 복원
 4. 결과 이미지를 시각적으로 확인
 
+## 검증 결과
+### ① Resize -> Undistortion
+  - Undistortion IP의 m_tvalid(output) & m_teady(input) handshake 발생
+  - Undistortion IP가 LUT를 기반으로 BRAM에서 Resize된 데이터를 Read
+  - 첫 픽셀 이후 m_tuser가 1 -> 0 transition
+  - m_tdata를 통해 FIFO에 왜곡 보정된 프레임 데이터 전송
+<img width="2040" height="515" alt="image" src="https://github.com/user-attachments/assets/22cb43b1-2748-4f8e-93d1-6d57ba4fe01b" />
+
+
+
+
+
+### ② Undistortion -> Resize
+
+- Undistort ip의 m_tvalid(output)와 m_tready(input) handshake off
+- Resize ip가 BRAM에 데이터 Write
+- 마지막 픽셀에서 m_tlast 1클럭 pulse 발생
+- 마지막 픽셀 이후 m_tuser 0 -> 1 transition
+
+<img width="989" height="258" alt="image" src="https://github.com/user-attachments/assets/35ecc8cc-d7a6-49bc-a248-4857daa7312d" />
+
+### 생성 이미지
+<img width="500" height="187.5" alt="image" src="https://github.com/user-attachments/assets/1354e539-8941-4845-8c7f-90074184a4b0" />
+
 ## 폴더 구조
 
 ```text
